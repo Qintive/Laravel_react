@@ -1,0 +1,15 @@
+.adminContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100vh;
+}
+
+.adminContainer > * {
+    overflow-y: auto;
+}
+
+@media (max-width: 280px) {
+    .adminContainer {
+        grid-template-columns: 1fr;
+    }
+}
